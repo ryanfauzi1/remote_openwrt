@@ -15,4 +15,4 @@ echo -e "#!/bin/bash\nscreen -d -m remote\nexit 0" > /etc/rc.local
  fi
 chmod +x /etc/rc.local
 echo "#################################"
-echo -e "\nUntuk melihat log url ketik cat logremot.txt\nSelesai. \n"
+echo -e "\nUntuk melihat log url, ketik cat logremot.txt\nSelesai. \n"
