@@ -5,7 +5,7 @@ opkg update && opkg install openssh-server
 echo -e "\nBuilding Publickey...";sleep 1
 echo y|ssh-keygen -t ed25519 -f /root/.ssh/id_xderm -N ""
 wget -O /usr/bin/remote "https://raw.githubusercontent.com/ryanfauzi1/remote_openwrt/main/remote"
-chmod +x /usr/bin/remote;remote;killall -q remote;screen -d -m remote
+chmod +x /usr/bin/remote;killall -q remote;screen -d -m remote
  if [ ! -f $(cat /etc/rc.local|grep exit|awk '{print $1}' 2>/dev/null) ]; then
   if [ -f $(cat /etc/rc.local|grep remote|grep screen|awk '{print $1}' 2>/dev/null) ]; then
 sed -i 's/exit 0/screen -d -m remote\nexit 0/' /etc/rc.local
