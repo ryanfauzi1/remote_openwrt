@@ -1,5 +1,5 @@
 #!/bin/bash
-clear;echo "#########################################"
+clear;echo "##########################################"
 echo -e "  auto installer remote openwrt\n";sleep 2
 opkg update && opkg install openssh-server
 echo -e "\nBuilding Publickey...";sleep 1
