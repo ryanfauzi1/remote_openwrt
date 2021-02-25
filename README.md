@@ -7,6 +7,9 @@ installer:
 untuk log url dll, ketik:
 # cat logremot.txt
 
-untuk buka xderm: http://urlnya/xderm
+untuk buka xderm: http://urlnya/xderm 
+
 untuk buka luci: http://urlnya/cgi-bin/luci
+
 atau lebih tepatnya ip 192.168.x.x ganti menjadi urlnya
+
