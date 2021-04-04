@@ -3,7 +3,7 @@ clear;x=20
 while true; do
  if [ -f $(ps w|grep host.run|grep ssh|grep 80|awk '{print $1}') ]; then
 x=0;rm -rf /root/logremot.txt;echo "tunggu..." > /root/logremot.txt
-rm -rf /root.ssh/known_hosts
+rm -rf /root/.ssh/known_hosts
 screen -dmS remote -L -Logfile /root/logremot.txt ssh -i ~/.ssh/id_xderm -o StrictHostKeyChecking=no -R 80:localhost:80 localhost.run
  fi
  while [ $x -lt 20 ]; do
